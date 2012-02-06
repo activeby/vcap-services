@@ -1,0 +1,17 @@
+---
+
+service:
+  name: active
+  version: "0.1"
+  description: 'Active test service'
+  plans: ['free']
+  tags: ['active', 'test']
+
+ip_route: localhost
+index: 0
+token: "0xdeadbeef"
+logging:
+  level: debug
+mbus: nats://localhost:4222
+pid: /var/vcap/sys/run/active_service.pid
+# node_timeout: 2

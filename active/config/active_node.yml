@@ -1,0 +1,9 @@
+---
+pid: /var/vcap/sys/run/active_node.pid
+base_dir: /var/vcap/services/active/
+node_id: active_node_1
+mbus: nats://localhost:4222
+local_db: sqlite3:/var/vcap/services/active/active_node.db
+token: "0xdeadbeef"
+logging:
+  level: debug
